@@ -1,0 +1,82 @@
+## code
+
+dollar i = 123! #4 byte
+? i == 123 ? 
+{
+	print 42!
+} ...
+{
+	print 0!	
+}
+
+quarter j = 'c'! #1 byte
+
+# basic arithmetics
+## code
+
+print i + j!
+print i * 3!
+print 3 - j!
+print j / 4!
+print i * j - 2!
+
+# output to stdout
+## code
+
+print i!
+
+# do / while
+## code
+
+until (i != 8)
+{
+	i = i + 1!	
+}
+
+repeat
+{
+	i = i + 1!
+} until (i != 8)
+
+# scopes
+## code
+
+{
+	dollar i = 4!
+}
+i = 3!
+
+# functions
+## code
+
+func_1(dollar arg) -> bankrupt #bankrupt = void
+{
+	arg = arg + 3!	
+}
+
+func_2() -> bankrupt
+{
+	#pay 1!
+}
+
+n(dollar arg) -> dollar #recursive faculty of n calculation, pay = return
+{
+	? arg == 1 ? 
+	{
+		pay 1! 	
+	} ...
+	{
+		pay n(arg - 1) * arg!
+	}
+}
+
+func_2()!
+#print func_2()!
+print 3 - 4!
+print 'c'!
+quarter q = 97!
+dollar r = 'a'!
+print q! #implicit type conversions
+print r! #print to stdout
+dollar bla = read "input for a basic calculation?"! #read from stdin
+print bla * 3 + 4!

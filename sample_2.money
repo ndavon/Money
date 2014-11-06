@@ -1,0 +1,60 @@
+fff(dollar _) -> dollar
+{
+	? _ == 0 ?
+	{
+		pay 0!	
+	} ...
+	{
+		print _!
+		fff(_ - 1)!
+	}
+	
+	pay 1!
+}
+
+func(dollar _, dollar i, dollar q) -> bankrupt
+{
+	_ = 3!
+	dollar j = '4'!
+	print j!
+	
+	until (j != 3)
+	{
+		quarter k = 3!
+		dollar j = k!
+	}	
+	
+	pay!
+	print 6!
+}
+
+dollar i = 3 + 3 * 4!
+dollar j = 4!
+? i != 3 ?
+{
+	dollar i = 1 * 4 + 5!
+
+	? i >= 4 ?
+	{
+		i = 2!
+	}
+} ...
+{
+	dollar k = 3!	
+	? i == 2 ?
+	{
+		i = 4!
+	}
+}
+
+? j != 3 ?
+{
+	j = 2!	
+}
+
+print 3!
+print 3 + 3 * 4 + 7 * 2!
+print j!
+fff(4)!
+print fff(3)!
+func(1, 4, 8 + 8)!
